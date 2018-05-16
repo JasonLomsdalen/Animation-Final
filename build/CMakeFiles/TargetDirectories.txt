@@ -1,0 +1,10 @@
+/Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeFiles/install.dir
+/Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeFiles/assignment3.dir
+/Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeFiles/ALL_BUILD.dir
+/Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeFiles/ZERO_CHECK.dir
+/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/CMakeFiles/install.dir
+/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/CMakeFiles/uninstall.dir
+/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/CMakeFiles/ALL_BUILD.dir
+/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/CMakeFiles/ZERO_CHECK.dir
+/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/CMakeFiles/install.dir
+/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/CMakeFiles/glfw.dir
