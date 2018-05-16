@@ -7,499 +7,532 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		2355BF7CB7C14A19B5969B87 /* uninstall */ = {
+		1E61628DA03545B88A5A60C7 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 5D0B493BED3945C3A5BE85FA /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildConfigurationList = 5C2139220CBD4FAF920FA600 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				B0AC00EF362A4B55B72E10D8 /* CMake Rules */,
+				D222D59C22834B12BE63BF75 /* CMake Rules */,
+			);
+			dependencies = (
+				741C4AD7AEFE494EA9A18BAA /* PBXTargetDependency */,
+				FA8932B574C6496195BB0CD1 /* PBXTargetDependency */,
+				A80F3CD35F2048B7B28B318B /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		25C222A2226B4DB3B2827946 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7FC5764F2C184F6BA2E3CEFE /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				7F2E99FEA2234DF693BB651D /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				F66A3EB4075640ECBDA0B828 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		830C92CC4C434B1F8F3ADBC7 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 84937C5142834A2B923A7066 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				85CF78889A1742B98385C242 /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = uninstall;
 			productName = uninstall;
 		};
-		3E7A6F2EF1574174A7947801 /* ZERO_CHECK */ = {
+		A905868333974DA3ADCFE301 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 53A5141FE47B471AA1816BF1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 1EBC5048CDD94C618E1D558A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				16B435FC872F4D7280284AD9 /* CMake Rules */,
+				9BC0519C85F4466797D5E934 /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		D750F2C0BBF147359953893F /* install */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 526575800D634387BDF4B18E /* Build configuration list for PBXAggregateTarget "install" */;
-			buildPhases = (
-				033933E2B902403A9C08D61C /* CMake PostBuild Rules */,
-			);
-			dependencies = (
-				5AA351EC90454F2E9D357C1E /* PBXTargetDependency */,
-			);
-			name = install;
-			productName = install;
-		};
-		FDE6B25B672D42F09B8ED785 /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 7B7F01AF19A0486295371EAA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				2414DF35448640A7B0B989E8 /* CMake Rules */,
-			);
-			dependencies = (
-				9E22ACFBE62946BD9BE7C538 /* PBXTargetDependency */,
-				D69DFFDD4013429CAD0C426D /* PBXTargetDependency */,
-				0690193827BD47EDBC08DE56 /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		049F08C2F4874F8E8DD2E718 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */ = {isa = PBXBuildFile; fileRef = C9C6C8167828415384360CFF /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */; };
-		06FC09E6524C4AB49E1F6165 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 742F225E125F4DCA8A1DAF21 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */; };
-		0C198B6EAA6D4DCAA104959E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 66D24B34E05E4E7BA86B5FF0 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */; };
-		0E1AEC3C7C7241219D19FF2A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = EC5EF0A4A0304283ADE20AEC /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */; };
-		1EAA745332DC4D9E94A666E4 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */ = {isa = PBXBuildFile; fileRef = 71C339CB1DC94C309DD130B7 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */; };
-		222C29E51302490EBBC57411 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */ = {isa = PBXBuildFile; fileRef = 84E3344193554106A068BA7A /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */; };
-		24DCCE6D2AC64B6FB3C4B204 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */ = {isa = PBXBuildFile; fileRef = 620AD3522998450E8444C266 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */; };
-		28EEC6439C614B3A9C1D0C7C /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */ = {isa = PBXBuildFile; fileRef = 8038F40647A64DFAA83FC87E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */; };
-		2C20537C6A4042E183C57822 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 8FFE1A42A6FD406A84782EFB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */; };
-		2D7E07EDCC84439DAA081D04 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F9C7D12B08A34141BD4BA9A2 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */; };
-		3550ECC32DB64CF4AAF1D736 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */ = {isa = PBXBuildFile; fileRef = C247ABCA8EFB4A358352231B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */; };
-		36DE6228E2AF483095DECCA2 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */ = {isa = PBXBuildFile; fileRef = 200B6C896D0141B494703DB6 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */; };
-		43CB35E0D1114F1E918BD86F /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */ = {isa = PBXBuildFile; fileRef = 52FD193CBC384639A5679DDB /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */; };
-		4DE4D5A3021F4C58945595E8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9AA8F9F996C8443C9A8C30C6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */; };
-		529634BDE238437A8A0BE5A6 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */ = {isa = PBXBuildFile; fileRef = 00F789385A1542CF8AE31BE9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */; };
-		55D4EC3D253943E7968AF37C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */ = {isa = PBXBuildFile; fileRef = 463CC3D9AAEB49E2A6A63B51 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */; };
-		5B6851787C2E492A9D8CD445 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_frag.glsl */ = {isa = PBXBuildFile; fileRef = 64F339F35CCC49528FD4271A /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_frag.glsl */; };
-		5BD8A64344B94975BFEF8D58 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 02F3ED27FD78487DB6AE00DD /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */; };
-		5C8766FEC2B941059906EC71 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = C06347A4CE374F779CB0AEA8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */; };
-		5F464BEF8ABD47109327B251 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */ = {isa = PBXBuildFile; fileRef = 63607ED83B0942908DE06F40 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */; };
-		5F558355A82F448CB0FD466C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */ = {isa = PBXBuildFile; fileRef = F2ABF0A2BA0C41679F2131FD /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */; };
-		624B6DDE7AF74B15A93B9735 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */ = {isa = PBXBuildFile; fileRef = 5CB27B5C55B744078B87C5F5 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */; };
-		6341C03025564808B84FCCC6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */ = {isa = PBXBuildFile; fileRef = C0000AC8CC5147C2A02736B4 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */; };
-		689830F5EBBE47D3BD9CC30D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */ = {isa = PBXBuildFile; fileRef = AB965C8F923B4B32BF975992 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */; };
-		6CB7187BE5CF42639202E29B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */ = {isa = PBXBuildFile; fileRef = E009AA3A620448BCB0BE5F7C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */; };
-		77367CA2F584423CB9BA6D4D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 6C71EE5C652A4DF39C43D4ED /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */; };
-		7778358A87E4414DBA6F9ADF /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */ = {isa = PBXBuildFile; fileRef = 0D67C0B17FAB4FFB89FAC895 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */; };
-		7B070F6B4D0B41E18EFAD534 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = 9F6616EB4E794DD78ADABE4E /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */; };
-		7DEA13DE28DD4437B6548BBD /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 8D78A57160984676A47B5219 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */; };
-		7F7E5F38A1FD460283D47886 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */ = {isa = PBXBuildFile; fileRef = 6626D6BDBE9541B98D412C83 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */; };
-		9423F401250C49A489E28E24 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */ = {isa = PBXBuildFile; fileRef = 59BCC9A19A5848B3A289F86B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */; };
-		990F0F4A57A147CB915CE240 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */ = {isa = PBXBuildFile; fileRef = D3F0D73D4D284EB9BC67A299 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */; };
-		9DCC6A7CAA434DD28E6CC774 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 908B1E0AF15E49FB9F82ED43 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */; };
-		A4F9EF47F54045FA8002E299 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */ = {isa = PBXBuildFile; fileRef = D2770DADD03448439CECD3E4 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */; };
-		B03E12B9135F4571AB3D6433 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyfrag.glsl */ = {isa = PBXBuildFile; fileRef = 0FC8C8E95EC74EF79A1DAAC3 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyfrag.glsl */; };
-		B0A21C889CB543309EFA4D09 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */ = {isa = PBXBuildFile; fileRef = 8B7C1F2575EE4A84A077CB90 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */; };
-		B4DFC59E32054B368896A404 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 43D4958321B9452B9BA842F1 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */; };
-		B4E439A64A9746A0840F96CE /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 688CAAA61BD94AC5B9D09CD9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */; };
-		BEB3591B46364CBF82E76239 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */ = {isa = PBXBuildFile; fileRef = 8395EDA274EE47F1BD605832 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */; };
-		C259E0A674784302B5539B05 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = 93388C6931C148328BD173FE /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */; };
-		C336281D714E4F88AA068578 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */ = {isa = PBXBuildFile; fileRef = 0ABC3F9247B042E29DD4CA91 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */; };
-		C71D0F519D3F421493ABFAB9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = A77F2B84F5BC4A3C985C64A3 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */; };
-		D1397DFF4B294F3D8BC0E8CA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */ = {isa = PBXBuildFile; fileRef = 6D8B9BCA256B4DBD87B1FA66 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */; };
-		D9E4EEFAA1DC492BB3137DE2 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */ = {isa = PBXBuildFile; fileRef = 37B3431F85DE4F08A115B634 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */; };
-		E34466B8CB5A416EBC71DE27 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_vertex.glsl */ = {isa = PBXBuildFile; fileRef = CCF8A4A554854F369383E7D0 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_vertex.glsl */; };
-		EB10E3E447204E6AABF9F92F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 0B0A6CBBAD7E402D82325B5A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */; };
-		EDE706DCD53F4B88AA22B159 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 1819BBBC832A41ADAE8F77D6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */; };
-		F0109CB032B040BAB4B850BC /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = 6DB7F61505924C319E893525 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */; };
-		F56AF983D0E44216886542BB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */ = {isa = PBXBuildFile; fileRef = 85DE2971F6D64EEB9D54928F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */; };
-		F684AD5245734D06B582CEA9 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyvertex.glsl */ = {isa = PBXBuildFile; fileRef = 65F506BEA8F146C2A4E36C1F /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyvertex.glsl */; };
-		FE43D39499CE471CA4D78AA9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = F256E5BDB2094CFBB1C16EA3 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */; };
+		01A92BE515B1423B99A700DB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = A3CDF81F53874EE1B49B4E48 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */; };
+		074FCA71C3FC472FB2C36EEB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 9275C1E827E94B86ACDF5EF9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */; };
+		0D3078AFA00042AE8D7F0648 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */ = {isa = PBXBuildFile; fileRef = 859C459A61BF4D10BF0B2E64 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */; };
+		0DD7EF70F9A34711AA105AE4 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = C4636477F8A04D989904F487 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */; };
+		0FAC926E36B1427699151253 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */ = {isa = PBXBuildFile; fileRef = 03D66837DB214C69B662682E /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */; };
+		129BE05AFED64C9992BFE751 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 4EC05B5151D744069E01087A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */; };
+		177A81233EDA4187A6795B33 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */ = {isa = PBXBuildFile; fileRef = ABCD32D6DFB84F8884CF2680 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */; };
+		182DA834916147D18D4F7084 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */ = {isa = PBXBuildFile; fileRef = F6E276B4EDB14FE5B5792A13 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */; };
+		1B3140CE70FE432A8ACCE17D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */ = {isa = PBXBuildFile; fileRef = 4C2E1C791F4047E5B30EF141 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */; };
+		20D4F290D63A4EE397DF448F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 68B58E4BCB49457EBD6B4371 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */; };
+		221502C5C49643088CE908CB /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */ = {isa = PBXBuildFile; fileRef = 0FCF55A216F340BDA5E1A2E6 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */; };
+		289C4A71F8BA4843BACDADBB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */ = {isa = PBXBuildFile; fileRef = E8517AC7BDB04900A7569A6D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */; };
+		2967386F2AB24FE183DC5876 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */ = {isa = PBXBuildFile; fileRef = 0C9D93F37E1C49C9983FBC93 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */; };
+		300855C5A3BD4AB4A7E4C6F2 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = F6781ABA0CD54E74909DF5A0 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */; };
+		384FC9E8D92C4E00BAEA845C /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = 774A0518F3EB41648538F944 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */; };
+		3A1F49E615B94188880540F9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 31D632037D094F759A8E6E37 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */; };
+		3DC41B1B19D04C4F93DEED9C /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 35B3E4B29AB640C9BB3CA94A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */; };
+		4ADFCAC79EA741D19544D311 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */ = {isa = PBXBuildFile; fileRef = A6655F6FD6924290ACF39725 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */; };
+		552FEEF67B994AA0A644EFEF /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */ = {isa = PBXBuildFile; fileRef = 5F82D9BC0AB34F0281E657C9 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */; };
+		58310C2BEC724958ABEA296A /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */ = {isa = PBXBuildFile; fileRef = 97B6FB6B0A8D45BCB9510435 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */; };
+		5AF4E720764C494AA75652B2 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */ = {isa = PBXBuildFile; fileRef = 4EDE45D6F1D14ADEA15D3DC9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */; };
+		5E30D49A9EEA447FA971AB9D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */ = {isa = PBXBuildFile; fileRef = EF910B82B68842578EFCF05E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */; };
+		61AFDF6418CD4558BFA513C8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */ = {isa = PBXBuildFile; fileRef = 9C5FBAD5718A4492BA12BF38 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */; };
+		65CCEAEB4DCD4CE2956C0F2F /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */ = {isa = PBXBuildFile; fileRef = 9B00CBC4D68942918DFCE1FC /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */; };
+		67F8F09FD4A0478088F539F7 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = F0EA747CE3B742A7A79DE887 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */; };
+		6F4AC53C49F34CDC86D1659F /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */ = {isa = PBXBuildFile; fileRef = 29972DBD56304F6FBB4FA85D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */; };
+		7009B3D29BB34B20B02F6E13 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */ = {isa = PBXBuildFile; fileRef = C037E1D1EB24439BBC61ECA8 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */; };
+		7A640B6BB1384F8A8AABF2C9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */ = {isa = PBXBuildFile; fileRef = 0F794C985BA54561B5B6637D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */; };
+		7D1137D2DBF94BCC9B5FAC35 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 8979381D300C46A2960DCAD7 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */; };
+		7D23A2B49B9947D8B3089D19 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = A8F008AD0EC642419B7807FB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */; };
+		7DBFC29A6D6D4B9494A4200A /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */ = {isa = PBXBuildFile; fileRef = E90416F692DF4A6FAF5F04F0 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */; };
+		80497D0EE5DB4282B9603D84 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */ = {isa = PBXBuildFile; fileRef = 8583414F473140B0823AF685 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */; };
+		860B472B79C143ABB5713BBD /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */ = {isa = PBXBuildFile; fileRef = EEDDC65302894418916819BC /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */; };
+		87553B3BCB7944E3961BE140 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 853DB03ADE7D4C28B32AB1F2 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */; };
+		93068C65246D4FB9AB11B501 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9C1EABE2B5154F0486B67C8D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */; };
+		9886936973F14DE78A244349 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */ = {isa = PBXBuildFile; fileRef = 6AB22444088C471086BA8469 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */; };
+		A1AED4D94DA4401CA0588E65 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B75FB778B9DA49E2BC5DAD88 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */; };
+		A946628D50E54F6FA81D594E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = A8817D21077A4DC182875411 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */; };
+		C185D00A4E9B40A0B48EF8FE /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = 05B05714E64140CB9D62C5F8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */; };
+		C33659DA0E9A4186A472D0B9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */ = {isa = PBXBuildFile; fileRef = 8A95DEC847AE4CC8B2FE5998 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */; };
+		C36A28BFF23249D8A1F51C6E /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */ = {isa = PBXBuildFile; fileRef = 0102247C762840F3BD1F31EA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */; };
+		DE474CDC5C9E480A8740A000 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 5FB87073CB504428B802148C /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */; };
+		DFBA5AFABDB84517ACF9B83F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 89312D85F7834870933B7CAB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */; };
+		E70E1CEA25A54222B08610E0 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */ = {isa = PBXBuildFile; fileRef = 96DB38D7033C47D4A29CEB85 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */; };
+		F0340378D6B5490EB1BA0CA1 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */ = {isa = PBXBuildFile; fileRef = 839912993A704437ACDE0C4D /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */; };
+		FC9DBEC9C66E4B9EA4F7750C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */ = {isa = PBXBuildFile; fileRef = B6C55E615F0E4B188A861A49 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */; };
+		FCF2FA7E2B774587A78DB413 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */ = {isa = PBXBuildFile; fileRef = 5D4D51D19E3B43CBB1DA90EA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		02ACD66949A044459CF1FFE1 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		17505E004B1041FF868E1B9C /* RelWithDebInfo */ = {
+		18B942C9101A4824B83EC9D7 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
-		B595DDDD379C41628580D4E8 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		CAE76DFA3F1D435C946E1750 /* Debug */ = {
+		245FD2C921EE492490626125 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
+		A20E25BC0C28420DB2DD2011 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		D81DC6C4F4AD42A38A4E49B3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		13DD9DEC4E3C4019A47360DD /* PBXContainerItemProxy */ = {
+		75E3D9C710B44D9FB8629CF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D2D6F89138F14C6883E4799E /* Project object */;
+			containerPortal = 422C5383A4174691843292CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E7A6F2EF1574174A7947801;
-			remoteInfo = ZERO_CHECK;
-		};
-		1FFD15F6A95A44138DDEEDD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2D6F89138F14C6883E4799E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 585867423A8D4529A7F212EF;
+			remoteGlobalIDString = D333FEC6F9DA4104820B22B3;
 			remoteInfo = glfw;
 		};
-		200598FA03C44237B2D3199C /* PBXContainerItemProxy */ = {
+		77B13952A4FA4207A2447349 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D2D6F89138F14C6883E4799E /* Project object */;
+			containerPortal = 422C5383A4174691843292CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E7A6F2EF1574174A7947801;
-			remoteInfo = ZERO_CHECK;
-		};
-		3165C68B05194AADAAE58869 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2D6F89138F14C6883E4799E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FDE6B25B672D42F09B8ED785;
+			remoteGlobalIDString = 1E61628DA03545B88A5A60C7;
 			remoteInfo = ALL_BUILD;
 		};
-		9E503071904F4FE49FCA2ABE /* PBXContainerItemProxy */ = {
+		955F993B2EED4CBE9B3EFB41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D2D6F89138F14C6883E4799E /* Project object */;
+			containerPortal = 422C5383A4174691843292CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 585867423A8D4529A7F212EF;
-			remoteInfo = glfw;
+			remoteGlobalIDString = 240B55E2083E4174A161B4AC;
+			remoteInfo = assignment3;
 		};
-		CCB937C2F95246099EB9DBE4 /* PBXContainerItemProxy */ = {
+		988838C9ECDF474EBE9D8B19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D2D6F89138F14C6883E4799E /* Project object */;
+			containerPortal = 422C5383A4174691843292CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E7A6F2EF1574174A7947801;
+			remoteGlobalIDString = A905868333974DA3ADCFE301;
 			remoteInfo = ZERO_CHECK;
 		};
-		D83E963824494E51AC4DD06C /* PBXContainerItemProxy */ = {
+		A965C90E7BFA43DE9F6A02B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D2D6F89138F14C6883E4799E /* Project object */;
+			containerPortal = 422C5383A4174691843292CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7A50E3099B8D44E5B656571D;
-			remoteInfo = assignment3;
+			remoteGlobalIDString = A905868333974DA3ADCFE301;
+			remoteInfo = ZERO_CHECK;
+		};
+		C444EB78391E424583D38017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422C5383A4174691843292CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A905868333974DA3ADCFE301;
+			remoteInfo = ZERO_CHECK;
+		};
+		D176985EF25448ADAD5C0A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422C5383A4174691843292CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D333FEC6F9DA4104820B22B3;
+			remoteInfo = glfw;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F789385A1542CF8AE31BE9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = line.h; path = src/line.h; sourceTree = SOURCE_ROOT; };
-		02F3ED27FD78487DB6AE00DD /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "../../CSC471/glfw-3.2.1/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
-		0ABC3F9247B042E29DD4CA91 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = ext/glad/include/glad/glad.h; sourceTree = SOURCE_ROOT; };
-		0B0A6CBBAD7E402D82325B5A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../../CSC471/glfw-3.2.1/debug/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
-		0D67C0B17FAB4FFB89FAC895 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "../../CSC471/glfw-3.2.1/src/context.c"; sourceTree = SOURCE_ROOT; };
-		0FC8C8E95EC74EF79A1DAAC3 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyfrag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = skyfrag.glsl; path = resources/skyfrag.glsl; sourceTree = SOURCE_ROOT; };
-		1819BBBC832A41ADAE8F77D6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "../../CSC471/glfw-3.2.1/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
-		200B6C896D0141B494703DB6 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MatrixStack.h; path = src/MatrixStack.h; sourceTree = SOURCE_ROOT; };
-		37B3431F85DE4F08A115B634 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WindowManager.cpp; path = src/WindowManager.cpp; sourceTree = SOURCE_ROOT; };
-		43D4958321B9452B9BA842F1 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "../../CSC471/glfw-3.2.1/src/monitor.c"; sourceTree = SOURCE_ROOT; };
-		463CC3D9AAEB49E2A6A63B51 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fbx_convert.cpp; path = src/fbx_convert.cpp; sourceTree = SOURCE_ROOT; };
-		52FD193CBC384639A5679DDB /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Shape.h; path = src/Shape.h; sourceTree = SOURCE_ROOT; };
-		59BCC9A19A5848B3A289F86B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = src/Camera.h; sourceTree = SOURCE_ROOT; };
-		5CB27B5C55B744078B87C5F5 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = khrplatform.h; path = ext/glad/include/KHR/khrplatform.h; sourceTree = SOURCE_ROOT; };
-		620AD3522998450E8444C266 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MatrixStack.cpp; path = src/MatrixStack.cpp; sourceTree = SOURCE_ROOT; };
-		63607ED83B0942908DE06F40 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowManager.h; path = src/WindowManager.h; sourceTree = SOURCE_ROOT; };
-		64F339F35CCC49528FD4271A /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = plane_frag.glsl; path = resources/plane_frag.glsl; sourceTree = SOURCE_ROOT; };
-		65544478C3754840943963CA /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		65F506BEA8F146C2A4E36C1F /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyvertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = skyvertex.glsl; path = resources/skyvertex.glsl; sourceTree = SOURCE_ROOT; };
-		6626D6BDBE9541B98D412C83 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiny_obj_loader.h; path = src/tiny_obj_loader.h; sourceTree = SOURCE_ROOT; };
-		66D24B34E05E4E7BA86B5FF0 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
-		688CAAA61BD94AC5B9D09CD9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		6C71EE5C652A4DF39C43D4ED /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "../../CSC471/glfw-3.2.1/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
-		6D8B9BCA256B4DBD87B1FA66 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLSL.cpp; path = src/GLSL.cpp; sourceTree = SOURCE_ROOT; };
-		6DB7F61505924C319E893525 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "../../CSC471/glfw-3.2.1/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
-		71C339CB1DC94C309DD130B7 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader_fragment.glsl; path = resources/shader_fragment.glsl; sourceTree = SOURCE_ROOT; };
-		742F225E125F4DCA8A1DAF21 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
-		8038F40647A64DFAA83FC87E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "../../CSC471/glfw-3.2.1/src/window.c"; sourceTree = SOURCE_ROOT; };
-		8395EDA274EE47F1BD605832 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLSL.h; path = src/GLSL.h; sourceTree = SOURCE_ROOT; };
-		84E3344193554106A068BA7A /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader_vertex.glsl; path = resources/shader_vertex.glsl; sourceTree = SOURCE_ROOT; };
-		85DE2971F6D64EEB9D54928F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "../../CSC471/glfw-3.2.1/src/internal.h"; sourceTree = SOURCE_ROOT; };
-		8B7C1F2575EE4A84A077CB90 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shape.cpp; path = src/Shape.cpp; sourceTree = SOURCE_ROOT; };
-		8D78A57160984676A47B5219 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "../../CSC471/glfw-3.2.1/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
-		8FFE1A42A6FD406A84782EFB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
-		908B1E0AF15E49FB9F82ED43 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "../../CSC471/glfw-3.2.1/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
-		93388C6931C148328BD173FE /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "../../CSC471/glfw-3.2.1/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
-		9AA8F9F996C8443C9A8C30C6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../CSC471/glfw-3.2.1/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-		9F6616EB4E794DD78ADABE4E /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = ext/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
-		A77F2B84F5BC4A3C985C64A3 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "../../CSC471/glfw-3.2.1/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
-		AB965C8F923B4B32BF975992 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = line.cpp; path = src/line.cpp; sourceTree = SOURCE_ROOT; };
-		B06D7B2176DA401096C539F4 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../CSC471/glfw-3.2.1/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-		C0000AC8CC5147C2A02736B4 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "../../CSC471/glfw-3.2.1/src/input.c"; sourceTree = SOURCE_ROOT; };
-		C06347A4CE374F779CB0AEA8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "../../CSC471/glfw-3.2.1/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
-		C247ABCA8EFB4A358352231B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Program.h; path = src/Program.h; sourceTree = SOURCE_ROOT; };
-		C57058F6D5EA44A59A545273 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		C9C6C8167828415384360CFF /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "../../CSC471/glfw-3.2.1/src/init.c"; sourceTree = SOURCE_ROOT; };
-		CCF8A4A554854F369383E7D0 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_vertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = plane_vertex.glsl; path = resources/plane_vertex.glsl; sourceTree = SOURCE_ROOT; };
-		CEB191095CA2497EA2673314 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2770DADD03448439CECD3E4 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bone.h; path = src/bone.h; sourceTree = SOURCE_ROOT; };
-		D3F0D73D4D284EB9BC67A299 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = src/stb_image.h; sourceTree = SOURCE_ROOT; };
-		E009AA3A620448BCB0BE5F7C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Program.cpp; path = src/Program.cpp; sourceTree = SOURCE_ROOT; };
-		EC5EF0A4A0304283ADE20AEC /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "../../CSC471/glfw-3.2.1/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
-		F256E5BDB2094CFBB1C16EA3 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
-		F2ABF0A2BA0C41679F2131FD /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
-		F856E51424A94F0EB2157B35 /* assignment3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = assignment3; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9C7D12B08A34141BD4BA9A2 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0102247C762840F3BD1F31EA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bone.h; path = src/bone.h; sourceTree = SOURCE_ROOT; };
+		03D66837DB214C69B662682E /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLSL.h; path = src/GLSL.h; sourceTree = SOURCE_ROOT; };
+		05B05714E64140CB9D62C5F8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "../../CSC471/glfw-3.2.1/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
+		0C9D93F37E1C49C9983FBC93 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiny_obj_loader.h; path = src/tiny_obj_loader.h; sourceTree = SOURCE_ROOT; };
+		0F794C985BA54561B5B6637D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fbx_convert.cpp; path = src/fbx_convert.cpp; sourceTree = SOURCE_ROOT; };
+		0FCF55A216F340BDA5E1A2E6 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowManager.h; path = src/WindowManager.h; sourceTree = SOURCE_ROOT; };
+		29972DBD56304F6FBB4FA85D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MatrixStack.h; path = src/MatrixStack.h; sourceTree = SOURCE_ROOT; };
+		317E402160884FEB906C31B0 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		31D632037D094F759A8E6E37 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "../../CSC471/glfw-3.2.1/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		35B3E4B29AB640C9BB3CA94A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "../../CSC471/glfw-3.2.1/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		4C2E1C791F4047E5B30EF141 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = src/stb_image.h; sourceTree = SOURCE_ROOT; };
+		4EC05B5151D744069E01087A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		4EDE45D6F1D14ADEA15D3DC9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "../../CSC471/glfw-3.2.1/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		52AF005C5C9B4CA3A3C9E09B /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5D4D51D19E3B43CBB1DA90EA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLSL.cpp; path = src/GLSL.cpp; sourceTree = SOURCE_ROOT; };
+		5F82D9BC0AB34F0281E657C9 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader_fragment.glsl; path = resources/shader_fragment.glsl; sourceTree = SOURCE_ROOT; };
+		5FB87073CB504428B802148C /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "../../CSC471/glfw-3.2.1/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		68B58E4BCB49457EBD6B4371 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		6AB22444088C471086BA8469 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = src/Camera.h; sourceTree = SOURCE_ROOT; };
+		774A0518F3EB41648538F944 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = ext/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		839912993A704437ACDE0C4D /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader_vertex.glsl; path = resources/shader_vertex.glsl; sourceTree = SOURCE_ROOT; };
+		853DB03ADE7D4C28B32AB1F2 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "../../CSC471/glfw-3.2.1/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+		8583414F473140B0823AF685 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Shape.h; path = src/Shape.h; sourceTree = SOURCE_ROOT; };
+		859C459A61BF4D10BF0B2E64 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shape.cpp; path = src/Shape.cpp; sourceTree = SOURCE_ROOT; };
+		89312D85F7834870933B7CAB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "../../CSC471/glfw-3.2.1/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
+		8979381D300C46A2960DCAD7 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../../CSC471/glfw-3.2.1/debug/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		8A95DEC847AE4CC8B2FE5998 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "../../CSC471/glfw-3.2.1/src/input.c"; sourceTree = SOURCE_ROOT; };
+		9275C1E827E94B86ACDF5EF9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "../../CSC471/glfw-3.2.1/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		96DB38D7033C47D4A29CEB85 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = ext/glad/include/glad/glad.h; sourceTree = SOURCE_ROOT; };
+		97B6FB6B0A8D45BCB9510435 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MatrixStack.cpp; path = src/MatrixStack.cpp; sourceTree = SOURCE_ROOT; };
+		9B00CBC4D68942918DFCE1FC /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Program.cpp; path = src/Program.cpp; sourceTree = SOURCE_ROOT; };
+		9BC652795CBF43A3AC501717 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1EABE2B5154F0486B67C8D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../CSC471/glfw-3.2.1/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		9C5FBAD5718A4492BA12BF38 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "../../CSC471/glfw-3.2.1/src/context.c"; sourceTree = SOURCE_ROOT; };
+		A158B0FF041F4C0B93CBADF5 /* assignment3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = assignment3; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CDF81F53874EE1B49B4E48 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+		A6655F6FD6924290ACF39725 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = line.cpp; path = src/line.cpp; sourceTree = SOURCE_ROOT; };
+		A8817D21077A4DC182875411 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "../../CSC471/glfw-3.2.1/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
+		A8F008AD0EC642419B7807FB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "../../CSC471/glfw-3.2.1/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		ABCD32D6DFB84F8884CF2680 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		B6C55E615F0E4B188A861A49 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = line.h; path = src/line.h; sourceTree = SOURCE_ROOT; };
+		B75FB778B9DA49E2BC5DAD88 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C037E1D1EB24439BBC61ECA8 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		C17D40D47A574D569F3A08CC /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../CSC471/glfw-3.2.1/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		C4636477F8A04D989904F487 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "../../CSC471/glfw-3.2.1/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		E8517AC7BDB04900A7569A6D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "../../CSC471/glfw-3.2.1/src/init.c"; sourceTree = SOURCE_ROOT; };
+		E90416F692DF4A6FAF5F04F0 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WindowManager.cpp; path = src/WindowManager.cpp; sourceTree = SOURCE_ROOT; };
+		EEDDC65302894418916819BC /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Program.h; path = src/Program.h; sourceTree = SOURCE_ROOT; };
+		EF910B82B68842578EFCF05E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "../../CSC471/glfw-3.2.1/src/window.c"; sourceTree = SOURCE_ROOT; };
+		F0EA747CE3B742A7A79DE887 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "../../CSC471/glfw-3.2.1/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		F6781ABA0CD54E74909DF5A0 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "../../CSC471/glfw-3.2.1/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
+		F6E276B4EDB14FE5B5792A13 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = khrplatform.h; path = ext/glad/include/KHR/khrplatform.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		0D170357ECCC447C88DD6418 /* CMake Rules */ = {
+		039100AFD9304F09A93C59B1 /* uninstall */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		14F17C5F97514A558CB1C070 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				5CB27B5C55B744078B87C5F5 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */,
-				0ABC3F9247B042E29DD4CA91 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */,
-				59BCC9A19A5848B3A289F86B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */,
-				8395EDA274EE47F1BD605832 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */,
-				200B6C896D0141B494703DB6 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */,
-				C247ABCA8EFB4A358352231B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */,
-				52FD193CBC384639A5679DDB /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */,
-				63607ED83B0942908DE06F40 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */,
-				D2770DADD03448439CECD3E4 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */,
-				00F789385A1542CF8AE31BE9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */,
-				D3F0D73D4D284EB9BC67A299 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */,
-				6626D6BDBE9541B98D412C83 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		3369E7F7658046D290C2F323 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				742F225E125F4DCA8A1DAF21 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */,
-				F256E5BDB2094CFBB1C16EA3 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */,
-				66D24B34E05E4E7BA86B5FF0 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */,
-				C06347A4CE374F779CB0AEA8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */,
-				8FFE1A42A6FD406A84782EFB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */,
-				0D67C0B17FAB4FFB89FAC895 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */,
-				C9C6C8167828415384360CFF /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */,
-				C0000AC8CC5147C2A02736B4 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */,
-				43D4958321B9452B9BA842F1 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */,
-				EC5EF0A4A0304283ADE20AEC /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */,
-				6DB7F61505924C319E893525 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */,
-				908B1E0AF15E49FB9F82ED43 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */,
-				8038F40647A64DFAA83FC87E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		42B1CE5F8B104C56B9727148 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B0A6CBBAD7E402D82325B5A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */,
-				A77F2B84F5BC4A3C985C64A3 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */,
-				02F3ED27FD78487DB6AE00DD /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */,
-				8D78A57160984676A47B5219 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */,
-				6C71EE5C652A4DF39C43D4ED /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */,
-				85DE2971F6D64EEB9D54928F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */,
-				1819BBBC832A41ADAE8F77D6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */,
-				93388C6931C148328BD173FE /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		4ACEF15C1E4E4AD288F911D7 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		528249B527C6438CACA248A0 = {
-			isa = PBXGroup;
-			children = (
-				9D5372D09B0E465291563EB8 /* assignment3 */,
-				C92708A9D08B4F618C8C6ED8 /* ALL_BUILD */,
-				B30CB459964D490C80C26A98 /* ZERO_CHECK */,
-				568D563453BA456F9D9F204A /* uninstall */,
-				A4C93082508D4836B2816194 /* GLFW3 */,
-				F9BAE9DA2F7D418B890E6223 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		568D563453BA456F9D9F204A /* uninstall */ = {
-			isa = PBXGroup;
-			children = (
-				99A76B9B83E547F0BC2C313C /* CMake Rules */,
-				B06D7B2176DA401096C539F4 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/CMakeLists.txt */,
+				62492B2BED0542E195C51D13 /* CMake Rules */,
+				C17D40D47A574D569F3A08CC /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/CMakeLists.txt */,
 			);
 			name = uninstall;
 			sourceTree = "<group>";
 		};
-		98CB20BC0B3F49058384A3B1 /* glfw */ = {
+		0F23592266764E59A2E31985 /* GLFW3 */ = {
 			isa = PBXGroup;
 			children = (
-				3369E7F7658046D290C2F323 /* Source Files */,
-				42B1CE5F8B104C56B9727148 /* Header Files */,
-				9AA8F9F996C8443C9A8C30C6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */,
+				3D0275D4BA5C40B6B59E68D2 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		221CFBCA7B5F44D5ACD99D44 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B58E4BCB49457EBD6B4371 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */,
+				A3CDF81F53874EE1B49B4E48 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */,
+				4EC05B5151D744069E01087A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */,
+				853DB03ADE7D4C28B32AB1F2 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */,
+				A8F008AD0EC642419B7807FB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */,
+				9C5FBAD5718A4492BA12BF38 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */,
+				E8517AC7BDB04900A7569A6D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */,
+				8A95DEC847AE4CC8B2FE5998 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */,
+				5FB87073CB504428B802148C /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */,
+				9275C1E827E94B86ACDF5EF9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */,
+				A8817D21077A4DC182875411 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */,
+				89312D85F7834870933B7CAB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */,
+				EF910B82B68842578EFCF05E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3D0275D4BA5C40B6B59E68D2 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				221CFBCA7B5F44D5ACD99D44 /* Source Files */,
+				AD90961768234B85ADB73EF8 /* Header Files */,
+				9C1EABE2B5154F0486B67C8D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/CMakeLists.txt */,
 			);
 			name = glfw;
 			sourceTree = "<group>";
 		};
-		99A76B9B83E547F0BC2C313C /* CMake Rules */ = {
+		5B79B6F6DD8F4AF5917971FF /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		9D5372D09B0E465291563EB8 /* assignment3 */ = {
+		62492B2BED0542E195C51D13 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				D3AA612386A84C74A8B2DE96 /* Source Files */,
-				14F17C5F97514A558CB1C070 /* Header Files */,
-				F9C7D12B08A34141BD4BA9A2 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */,
-				64F339F35CCC49528FD4271A /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_frag.glsl */,
-				CCF8A4A554854F369383E7D0 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/plane_vertex.glsl */,
-				71C339CB1DC94C309DD130B7 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */,
-				84E3344193554106A068BA7A /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */,
-				0FC8C8E95EC74EF79A1DAAC3 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyfrag.glsl */,
-				65F506BEA8F146C2A4E36C1F /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/skyvertex.glsl */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8C4330834A46448792114C8C /* assignment3 */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8D7ACA8184AFA86979E95 /* Source Files */,
+				953AB416E87B451191E03CC8 /* Header Files */,
+				B75FB778B9DA49E2BC5DAD88 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */,
+				5F82D9BC0AB34F0281E657C9 /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_fragment.glsl */,
+				839912993A704437ACDE0C4D /* /Users/JasonComputer/Documents/CSC474/assignment3/resources/shader_vertex.glsl */,
 			);
 			name = assignment3;
 			sourceTree = "<group>";
 		};
-		A4C93082508D4836B2816194 /* GLFW3 */ = {
+		953AB416E87B451191E03CC8 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				98CB20BC0B3F49058384A3B1 /* glfw */,
+				F6E276B4EDB14FE5B5792A13 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/KHR/khrplatform.h */,
+				96DB38D7033C47D4A29CEB85 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include/glad/glad.h */,
+				6AB22444088C471086BA8469 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.h */,
+				03D66837DB214C69B662682E /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.h */,
+				29972DBD56304F6FBB4FA85D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.h */,
+				EEDDC65302894418916819BC /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.h */,
+				8583414F473140B0823AF685 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.h */,
+				0FCF55A216F340BDA5E1A2E6 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.h */,
+				0102247C762840F3BD1F31EA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/bone.h */,
+				B6C55E615F0E4B188A861A49 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.h */,
+				4C2E1C791F4047E5B30EF141 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/stb_image.h */,
+				0C9D93F37E1C49C9983FBC93 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/tiny_obj_loader.h */,
 			);
-			name = GLFW3;
+			name = "Header Files";
 			sourceTree = "<group>";
 		};
-		B30CB459964D490C80C26A98 /* ZERO_CHECK */ = {
+		A6849842BA784FB188B135B1 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				4ACEF15C1E4E4AD288F911D7 /* CMake Rules */,
-				C57058F6D5EA44A59A545273 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */,
-			);
-			name = ZERO_CHECK;
-			sourceTree = "<group>";
-		};
-		C92708A9D08B4F618C8C6ED8 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				0D170357ECCC447C88DD6418 /* CMake Rules */,
-				65544478C3754840943963CA /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */,
+				FE2C4072EC9E48D9919707A4 /* CMake Rules */,
+				52AF005C5C9B4CA3A3C9E09B /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		D3AA612386A84C74A8B2DE96 /* Source Files */ = {
+		AD90961768234B85ADB73EF8 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F6616EB4E794DD78ADABE4E /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */,
-				F2ABF0A2BA0C41679F2131FD /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */,
-				6D8B9BCA256B4DBD87B1FA66 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */,
-				620AD3522998450E8444C266 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */,
-				E009AA3A620448BCB0BE5F7C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */,
-				8B7C1F2575EE4A84A077CB90 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */,
-				37B3431F85DE4F08A115B634 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */,
-				463CC3D9AAEB49E2A6A63B51 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */,
-				AB965C8F923B4B32BF975992 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */,
-				688CAAA61BD94AC5B9D09CD9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */,
+				8979381D300C46A2960DCAD7 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/glfw_config.h */,
+				F0EA747CE3B742A7A79DE887 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3.h */,
+				C4636477F8A04D989904F487 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include/GLFW/glfw3native.h */,
+				F6781ABA0CD54E74909DF5A0 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.h */,
+				31D632037D094F759A8E6E37 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_platform.h */,
+				4EDE45D6F1D14ADEA15D3DC9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/internal.h */,
+				35B3E4B29AB640C9BB3CA94A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.h */,
+				05B05714E64140CB9D62C5F8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C8A8C7A533384977A222F799 = {
+			isa = PBXGroup;
+			children = (
+				8C4330834A46448792114C8C /* assignment3 */,
+				A6849842BA784FB188B135B1 /* ALL_BUILD */,
+				CCAD3B1A2FE6419A8C11444E /* ZERO_CHECK */,
+				039100AFD9304F09A93C59B1 /* uninstall */,
+				0F23592266764E59A2E31985 /* GLFW3 */,
+				CC14CA0CE01344EBB33084C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC14CA0CE01344EBB33084C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A158B0FF041F4C0B93CBADF5 /* assignment3 */,
+				9BC652795CBF43A3AC501717 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCAD3B1A2FE6419A8C11444E /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				5B79B6F6DD8F4AF5917971FF /* CMake Rules */,
+				317E402160884FEB906C31B0 /* /Users/JasonComputer/Documents/CSC474/assignment3/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		E4B8D7ACA8184AFA86979E95 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				774A0518F3EB41648538F944 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */,
+				ABCD32D6DFB84F8884CF2680 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */,
+				5D4D51D19E3B43CBB1DA90EA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */,
+				97B6FB6B0A8D45BCB9510435 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */,
+				9B00CBC4D68942918DFCE1FC /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */,
+				859C459A61BF4D10BF0B2E64 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */,
+				E90416F692DF4A6FAF5F04F0 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */,
+				0F794C985BA54561B5B6637D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */,
+				A6655F6FD6924290ACF39725 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */,
+				C037E1D1EB24439BBC61ECA8 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		F9BAE9DA2F7D418B890E6223 /* Products */ = {
+		FE2C4072EC9E48D9919707A4 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				F856E51424A94F0EB2157B35 /* assignment3 */,
-				CEB191095CA2497EA2673314 /* glfw */,
 			);
-			name = Products;
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		585867423A8D4529A7F212EF /* glfw */ = {
+		240B55E2083E4174A161B4AC /* assignment3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0123F07EDBC4FF9AAFAB637 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildConfigurationList = B2D2FE75E45448CDB7C3F318 /* Build configuration list for PBXNativeTarget "assignment3" */;
 			buildPhases = (
-				553D8F4B6EF74F7A8D6C4D39 /* Sources */,
+				CD377915D07D4D6388BFC51E /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A6405B9915C45848901FCE4 /* PBXTargetDependency */,
-			);
-			name = glfw;
-			productName = glfw;
-			productReference = CEB191095CA2497EA2673314 /* glfw */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7A50E3099B8D44E5B656571D /* assignment3 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7215DE12CEC546F2B0ED2539 /* Build configuration list for PBXNativeTarget "assignment3" */;
-			buildPhases = (
-				67687C1FD40D498FB9E9EAA8 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78AD0BE1228A40E3B7F51ABD /* PBXTargetDependency */,
-				7A6D7E6A83FF48AD88EDCD3A /* PBXTargetDependency */,
+				E9363B042EE5433F90DDC6CC /* PBXTargetDependency */,
+				FE7D9FB5FF67469294FA1E6C /* PBXTargetDependency */,
 			);
 			name = assignment3;
 			productName = assignment3;
-			productReference = F856E51424A94F0EB2157B35 /* assignment3 */;
+			productReference = A158B0FF041F4C0B93CBADF5 /* assignment3 */;
 			productType = "com.apple.product-type.tool";
+		};
+		D333FEC6F9DA4104820B22B3 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBF9D92CD42400EBC46FE59 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				92439D87454E4070A2B0355D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38CD5064CEB348EF849A9D7B /* PBXTargetDependency */,
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 9BC652795CBF43A3AC501717 /* glfw */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D2D6F89138F14C6883E4799E /* Project object */ = {
+		422C5383A4174691843292CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 0D9AEDF5DDCC4C63AEBCBC62 /* Build configuration list for PBXProject "assignment3" */;
+			buildConfigurationList = 74074198FD0242C5868E44DC /* Build configuration list for PBXProject "assignment3" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				CAE76DFA3F1D435C946E1750 /* Debug */,
-				02ACD66949A044459CF1FFE1 /* Release */,
-				B595DDDD379C41628580D4E8 /* MinSizeRel */,
-				17505E004B1041FF868E1B9C /* RelWithDebInfo */,
+				245FD2C921EE492490626125 /* Debug */,
+				D81DC6C4F4AD42A38A4E49B3 /* Release */,
+				A20E25BC0C28420DB2DD2011 /* MinSizeRel */,
+				18B942C9101A4824B83EC9D7 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 528249B527C6438CACA248A0;
+			mainGroup = C8A8C7A533384977A222F799;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
-				FDE6B25B672D42F09B8ED785 /* ALL_BUILD */,
-				3E7A6F2EF1574174A7947801 /* ZERO_CHECK */,
-				7A50E3099B8D44E5B656571D /* assignment3 */,
-				D750F2C0BBF147359953893F /* install */,
-				2355BF7CB7C14A19B5969B87 /* uninstall */,
-				585867423A8D4529A7F212EF /* glfw */,
+				1E61628DA03545B88A5A60C7 /* ALL_BUILD */,
+				A905868333974DA3ADCFE301 /* ZERO_CHECK */,
+				240B55E2083E4174A161B4AC /* assignment3 */,
+				25C222A2226B4DB3B2827946 /* install */,
+				830C92CC4C434B1F8F3ADBC7 /* uninstall */,
+				D333FEC6F9DA4104820B22B3 /* glfw */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		033933E2B902403A9C08D61C /* CMake PostBuild Rules */ = {
+		121FC36B3CCC4D8687F2F006 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4907275E65D04121828A6492 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7443001961AE40E58AB6B3F1 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7F2E99FEA2234DF693BB651D /* CMake PostBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -510,59 +543,7 @@
 			shellScript = "make -C /Users/JasonComputer/Documents/CSC474/assignment3/build -f /Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		16B435FC872F4D7280284AD9 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/JasonComputer/Documents/CSC474/assignment3/build -f /Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		2414DF35448640A7B0B989E8 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/JasonComputer/Documents/CSC474/assignment3/build -f /Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		5A4E81D2F208403AA96A8310 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		A21A04D346C145CE8AACC4E7 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		B0AC00EF362A4B55B72E10D8 /* CMake Rules */ = {
+		85CF78889A1742B98385C242 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -573,7 +554,18 @@ exit 0";
 			shellScript = "make -C /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug -f /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		C1359E5ED31F4A1DA90637C5 = {
+		9BC0519C85F4466797D5E934 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/JasonComputer/Documents/CSC474/assignment3/build -f /Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A7B219C1AEA04469A9B4D0A0 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -588,590 +580,99 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		D044EE16F50E43F3A854EC46 = {
+		D222D59C22834B12BE63BF75 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
+			name = "CMake Rules";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
+			shellScript = "make -C /Users/JasonComputer/Documents/CSC474/assignment3/build -f /Users/JasonComputer/Documents/CSC474/assignment3/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		553D8F4B6EF74F7A8D6C4D39 /* Sources */ = {
+		92439D87454E4070A2B0355D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06FC09E6524C4AB49E1F6165 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */,
-				FE43D39499CE471CA4D78AA9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */,
-				0C198B6EAA6D4DCAA104959E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */,
-				5C8766FEC2B941059906EC71 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */,
-				2C20537C6A4042E183C57822 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */,
-				7778358A87E4414DBA6F9ADF /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */,
-				049F08C2F4874F8E8DD2E718 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */,
-				6341C03025564808B84FCCC6 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */,
-				B4DFC59E32054B368896A404 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */,
-				0E1AEC3C7C7241219D19FF2A /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */,
-				F0109CB032B040BAB4B850BC /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */,
-				9DCC6A7CAA434DD28E6CC774 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */,
-				28EEC6439C614B3A9C1D0C7C /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */,
+				20D4F290D63A4EE397DF448F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_init.m */,
+				01A92BE515B1423B99A700DB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_joystick.m */,
+				129BE05AFED64C9992BFE751 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_monitor.m */,
+				87553B3BCB7944E3961BE140 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_time.c */,
+				7D23A2B49B9947D8B3089D19 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/cocoa_window.m */,
+				61AFDF6418CD4558BFA513C8 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/context.c */,
+				289C4A71F8BA4843BACDADBB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/init.c */,
+				C33659DA0E9A4186A472D0B9 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/input.c */,
+				DE474CDC5C9E480A8740A000 /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/monitor.c */,
+				074FCA71C3FC472FB2C36EEB /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/nsgl_context.m */,
+				A946628D50E54F6FA81D594E /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/posix_tls.c */,
+				DFBA5AFABDB84517ACF9B83F /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/vulkan.c */,
+				5E30D49A9EEA447FA971AB9D /* /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src/window.c */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67687C1FD40D498FB9E9EAA8 /* Sources */ = {
+		CD377915D07D4D6388BFC51E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B070F6B4D0B41E18EFAD534 /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */,
-				5F558355A82F448CB0FD466C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */,
-				D1397DFF4B294F3D8BC0E8CA /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */,
-				24DCCE6D2AC64B6FB3C4B204 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */,
-				6CB7187BE5CF42639202E29B /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */,
-				B0A21C889CB543309EFA4D09 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */,
-				D9E4EEFAA1DC492BB3137DE2 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */,
-				55D4EC3D253943E7968AF37C /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */,
-				689830F5EBBE47D3BD9CC30D /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */,
-				B4E439A64A9746A0840F96CE /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */,
+				384FC9E8D92C4E00BAEA845C /* /Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/src/glad.c */,
+				177A81233EDA4187A6795B33 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Camera.cpp */,
+				FCF2FA7E2B774587A78DB413 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/GLSL.cpp */,
+				58310C2BEC724958ABEA296A /* /Users/JasonComputer/Documents/CSC474/assignment3/src/MatrixStack.cpp */,
+				65CCEAEB4DCD4CE2956C0F2F /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Program.cpp */,
+				0D3078AFA00042AE8D7F0648 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/Shape.cpp */,
+				7DBFC29A6D6D4B9494A4200A /* /Users/JasonComputer/Documents/CSC474/assignment3/src/WindowManager.cpp */,
+				7A640B6BB1384F8A8AABF2C9 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/fbx_convert.cpp */,
+				4ADFCAC79EA741D19544D311 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/line.cpp */,
+				7009B3D29BB34B20B02F6E13 /* /Users/JasonComputer/Documents/CSC474/assignment3/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0690193827BD47EDBC08DE56 /* PBXTargetDependency */ = {
+		38CD5064CEB348EF849A9D7B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E7A6F2EF1574174A7947801 /* ZERO_CHECK */;
-			targetProxy = 200598FA03C44237B2D3199C /* PBXContainerItemProxy */;
+			target = A905868333974DA3ADCFE301 /* ZERO_CHECK */;
+			targetProxy = C444EB78391E424583D38017 /* PBXContainerItemProxy */;
 		};
-		5AA351EC90454F2E9D357C1E /* PBXTargetDependency */ = {
+		741C4AD7AEFE494EA9A18BAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDE6B25B672D42F09B8ED785 /* ALL_BUILD */;
-			targetProxy = 3165C68B05194AADAAE58869 /* PBXContainerItemProxy */;
+			target = 240B55E2083E4174A161B4AC /* assignment3 */;
+			targetProxy = 955F993B2EED4CBE9B3EFB41 /* PBXContainerItemProxy */;
 		};
-		78AD0BE1228A40E3B7F51ABD /* PBXTargetDependency */ = {
+		A80F3CD35F2048B7B28B318B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 585867423A8D4529A7F212EF /* glfw */;
-			targetProxy = 9E503071904F4FE49FCA2ABE /* PBXContainerItemProxy */;
+			target = A905868333974DA3ADCFE301 /* ZERO_CHECK */;
+			targetProxy = 988838C9ECDF474EBE9D8B19 /* PBXContainerItemProxy */;
 		};
-		7A6D7E6A83FF48AD88EDCD3A /* PBXTargetDependency */ = {
+		E9363B042EE5433F90DDC6CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E7A6F2EF1574174A7947801 /* ZERO_CHECK */;
-			targetProxy = CCB937C2F95246099EB9DBE4 /* PBXContainerItemProxy */;
+			target = D333FEC6F9DA4104820B22B3 /* glfw */;
+			targetProxy = 75E3D9C710B44D9FB8629CF3 /* PBXContainerItemProxy */;
 		};
-		8A6405B9915C45848901FCE4 /* PBXTargetDependency */ = {
+		F66A3EB4075640ECBDA0B828 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E7A6F2EF1574174A7947801 /* ZERO_CHECK */;
-			targetProxy = 13DD9DEC4E3C4019A47360DD /* PBXContainerItemProxy */;
+			target = 1E61628DA03545B88A5A60C7 /* ALL_BUILD */;
+			targetProxy = 77B13952A4FA4207A2447349 /* PBXContainerItemProxy */;
 		};
-		9E22ACFBE62946BD9BE7C538 /* PBXTargetDependency */ = {
+		FA8932B574C6496195BB0CD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7A50E3099B8D44E5B656571D /* assignment3 */;
-			targetProxy = D83E963824494E51AC4DD06C /* PBXContainerItemProxy */;
+			target = D333FEC6F9DA4104820B22B3 /* glfw */;
+			targetProxy = D176985EF25448ADAD5C0A5A /* PBXContainerItemProxy */;
 		};
-		D69DFFDD4013429CAD0C426D /* PBXTargetDependency */ = {
+		FE7D9FB5FF67469294FA1E6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 585867423A8D4529A7F212EF /* glfw */;
-			targetProxy = 1FFD15F6A95A44138DDEEDD3 /* PBXContainerItemProxy */;
+			target = A905868333974DA3ADCFE301 /* ZERO_CHECK */;
+			targetProxy = A965C90E7BFA43DE9F6A02B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02349BD894264C6F8A1531C7 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		0E4C4CA4277D4FBF8EA3AF90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		1BB208A613924BCFA2DE991A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		3C280AE98A354DB2A4E2A038 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "    -DNDEBUG  ";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic     -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/MinSizeRel/libglfw3.a \"/Applications/Autodesk/FBX SDK/2019.0/lib/clang/release/libfbxsdk.a\" -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = assignment3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		3EBB37190A554A53BE700E87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		4EC0F8EFE8FA44F3918ED7BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
-			};
-			name = Debug;
-		};
-		4F6FA828516A4B4A88584DBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		5D50D78473504C16A4F53347 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		5F74C63F5002424FB31F5FF3 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6185D14A96D44C10A6A66979 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		66A7FD1F30004ABCBBAF7228 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		66E1CB9E49464BB4AE9DF27C /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
-			};
-			name = RelWithDebInfo;
-		};
-		6B5421EF80F8462EB37B3D1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = uninstall;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		77F672ED8735456DAB0F0945 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = uninstall;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		78B9DB95BB5D4C9A9B0B6371 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
-			};
-			name = Release;
-		};
-		7A3D36949BF344188ED8D2B1 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		87BA42C2DD7A4D9DAAAC7587 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		98C735C5717048C68060680B /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		9CB2BDD5BC9344BB99DA36C9 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "       -DNDEBUG  ";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic        -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/RelWithDebInfo/libglfw3.a \"/Applications/Autodesk/FBX SDK/2019.0/lib/clang/release/libfbxsdk.a\" -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = assignment3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		9EE29BDC5F854187B5189662 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = uninstall;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		A7520B9E6FC24633B89F4A3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		AA0F205ECEB04AA39C61B3DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = "   -fPIC -Wall  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		B9AFC54938904679B2BCE777 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "    -DNDEBUG  ";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic     -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/Release/libglfw3.a \"/Applications/Autodesk/FBX SDK/2019.0/lib/clang/release/libfbxsdk.a\" -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = assignment3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		C99236DCF7BF47E494C403C9 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
-			};
-			name = MinSizeRel;
-		};
-		D45D9E25C9714650A5498656 /* Debug */ = {
+		01624188735C484F829C0EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1197,7 +698,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		EB2353E62EA342DF834779CF /* MinSizeRel */ = {
+		01EBE19E87274678B87152CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1216,9 +717,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = MinSizeRel;
+			name = Debug;
 		};
-		EDFE6F8D6F454D4499C297D2 /* RelWithDebInfo */ = {
+		050BEAEE8BBB483DAC1B662A /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1237,9 +738,34 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
-		F57930436F5F461EA330D6D1 /* RelWithDebInfo */ = {
+		125C6DC6FCB24AA4AC71B45E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1341D1A4447D41E39F4A8655 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1260,87 +786,549 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
+		24155EEC58504D329358C59C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		27F0D29CDF1844FFA513E7C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		2D68322B30D04754B7BABFB0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3446903F0DAB428CA8C49666 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/RelWithDebInfo/libglfw3.a \"/Applications/Autodesk/FBX SDK/2019.0/lib/clang/release/libfbxsdk.a\" -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = assignment3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4281445CC7BE4FD5B58F555F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4D4D6AF600DA427282050C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4DE1844DB19543308F0D5996 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
+			};
+			name = MinSizeRel;
+		};
+		5E28090EC984471F95146AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5E86F167D0554C2E8B8CF5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/Release/libglfw3.a \"/Applications/Autodesk/FBX SDK/2019.0/lib/clang/release/libfbxsdk.a\" -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = assignment3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		643C6E6356DE46F88BEFF50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		79A4B6C8C5994DF3B60566E4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src/MinSizeRel/libglfw3.a \"/Applications/Autodesk/FBX SDK/2019.0/lib/clang/release/libfbxsdk.a\" -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = assignment3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9C9390BAF7BE4382BD5900FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A184692F20904201A8F039B4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A255B74432764FE78553A9B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A766A5662D49461CB1134B59 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		A900B013F37B4BEB942D9977 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AB22036407A64E7A8B70CB74 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B6F5525D23CC4531BE1172AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/src","/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DE6F348D70CE49BDA5E90CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E310330FF1C644FB971A87CD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FC3DBE87A78D42C7B535C56A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
+			};
+			name = Debug;
+		};
+		FD027BC00EE94922BB82FEB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/JasonComputer/Documents/CSC474/assignment3/ext/glad/include,"/Users/JasonComputer/Documents/CSC471/glfw-3.2.1/include",/Users/JasonComputer/Documents/CSC471/glm,"\"/Applications/Autodesk/FBX SDK/2019.0/include\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FD9FF2AD7B8B4DC48C91EE91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/JasonComputer/Documents/CSC474/assignment3/build/build;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D9AEDF5DDCC4C63AEBCBC62 /* Build configuration list for PBXProject "assignment3" */ = {
+		1EBC5048CDD94C618E1D558A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EC0F8EFE8FA44F3918ED7BB /* Debug */,
-				78B9DB95BB5D4C9A9B0B6371 /* Release */,
-				C99236DCF7BF47E494C403C9 /* MinSizeRel */,
-				66E1CB9E49464BB4AE9DF27C /* RelWithDebInfo */,
+				5E28090EC984471F95146AE0 /* Debug */,
+				643C6E6356DE46F88BEFF50E /* Release */,
+				050BEAEE8BBB483DAC1B662A /* MinSizeRel */,
+				2D68322B30D04754B7BABFB0 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		526575800D634387BDF4B18E /* Build configuration list for PBXAggregateTarget "install" */ = {
+		5C2139220CBD4FAF920FA600 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EBB37190A554A53BE700E87 /* Debug */,
-				1BB208A613924BCFA2DE991A /* Release */,
-				66A7FD1F30004ABCBBAF7228 /* MinSizeRel */,
-				7A3D36949BF344188ED8D2B1 /* RelWithDebInfo */,
+				01EBE19E87274678B87152CF /* Debug */,
+				FD027BC00EE94922BB82FEB4 /* Release */,
+				A184692F20904201A8F039B4 /* MinSizeRel */,
+				A900B013F37B4BEB942D9977 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		53A5141FE47B471AA1816BF1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		74074198FD0242C5868E44DC /* Build configuration list for PBXProject "assignment3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D50D78473504C16A4F53347 /* Debug */,
-				0E4C4CA4277D4FBF8EA3AF90 /* Release */,
-				02349BD894264C6F8A1531C7 /* MinSizeRel */,
-				EDFE6F8D6F454D4499C297D2 /* RelWithDebInfo */,
+				FC3DBE87A78D42C7B535C56A /* Debug */,
+				FD9FF2AD7B8B4DC48C91EE91 /* Release */,
+				4DE1844DB19543308F0D5996 /* MinSizeRel */,
+				A766A5662D49461CB1134B59 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5D0B493BED3945C3A5BE85FA /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+		7FC5764F2C184F6BA2E3CEFE /* Build configuration list for PBXAggregateTarget "install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B5421EF80F8462EB37B3D1E /* Debug */,
-				9EE29BDC5F854187B5189662 /* Release */,
-				77F672ED8735456DAB0F0945 /* MinSizeRel */,
-				F57930436F5F461EA330D6D1 /* RelWithDebInfo */,
+				27F0D29CDF1844FFA513E7C1 /* Debug */,
+				DE6F348D70CE49BDA5E90CED /* Release */,
+				4281445CC7BE4FD5B58F555F /* MinSizeRel */,
+				AB22036407A64E7A8B70CB74 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7215DE12CEC546F2B0ED2539 /* Build configuration list for PBXNativeTarget "assignment3" */ = {
+		84937C5142834A2B923A7066 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D45D9E25C9714650A5498656 /* Debug */,
-				B9AFC54938904679B2BCE777 /* Release */,
-				3C280AE98A354DB2A4E2A038 /* MinSizeRel */,
-				9CB2BDD5BC9344BB99DA36C9 /* RelWithDebInfo */,
+				4D4D6AF600DA427282050C7E /* Debug */,
+				A255B74432764FE78553A9B1 /* Release */,
+				E310330FF1C644FB971A87CD /* MinSizeRel */,
+				1341D1A4447D41E39F4A8655 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7B7F01AF19A0486295371EAA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		8BBF9D92CD42400EBC46FE59 /* Build configuration list for PBXNativeTarget "glfw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7520B9E6FC24633B89F4A3B /* Debug */,
-				4F6FA828516A4B4A88584DBE /* Release */,
-				EB2353E62EA342DF834779CF /* MinSizeRel */,
-				5F74C63F5002424FB31F5FF3 /* RelWithDebInfo */,
+				9C9390BAF7BE4382BD5900FE /* Debug */,
+				B6F5525D23CC4531BE1172AE /* Release */,
+				125C6DC6FCB24AA4AC71B45E /* MinSizeRel */,
+				24155EEC58504D329358C59C /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B0123F07EDBC4FF9AAFAB637 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+		B2D2FE75E45448CDB7C3F318 /* Build configuration list for PBXNativeTarget "assignment3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA0F205ECEB04AA39C61B3DA /* Debug */,
-				6185D14A96D44C10A6A66979 /* Release */,
-				87BA42C2DD7A4D9DAAAC7587 /* MinSizeRel */,
-				98C735C5717048C68060680B /* RelWithDebInfo */,
+				01624188735C484F829C0EAE /* Debug */,
+				5E86F167D0554C2E8B8CF5BC /* Release */,
+				79A4B6C8C5994DF3B60566E4 /* MinSizeRel */,
+				3446903F0DAB428CA8C49666 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D2D6F89138F14C6883E4799E /* Project object */;
+	rootObject = 422C5383A4174691843292CA /* Project object */;
 }
