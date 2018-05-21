@@ -118,7 +118,7 @@ public:
             animmat[ii] = mat4(1);
         }
         
-        readtobone("../../resources/test.fbx",&all_animation,&root);
+        readtobone("../../resources/thrustChar00.fbx",&all_animation,&root);
         root->set_animations(&all_animation,animmat,animmatsize);
     
         glGenVertexArrays(1, &VertexArrayID);
@@ -193,14 +193,19 @@ public:
         }
         
         //animation frame system
-        int anim_step_width_ms = 8490 / 204;
+        //int anim_step_width_ms = 8490 / 204;
+        ///////////////////////////////////
+        int anim_step_width_ms = 5711 / 138;
+        //int anim_step_width_ms = 3949 / 95;
+        ///////////////////////////////////
         static int frame = 0;
         if (totaltime_untilframe_ms >= anim_step_width_ms)
         {
             totaltime_untilframe_ms = 0;
             frame++;
         }
-        root->play_animation(frame,"axisneurontestfile_Avatar00");    //name of current animation
+        //root->play_animation(frame,"axisneurontestfile_Avatar00");    //name of current animation
+        root->play_animation(frame,"avatar_0_fbx_tmp");
         
         // Setup Matrices
         glm::mat4 V, M, P;
