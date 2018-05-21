@@ -219,11 +219,25 @@ public:
         
         // Send to Shaders and draw
         glBindVertexArray(VertexArrayID);
-
+        
+        //Center Dancer
         prog->bind();
         prog->setMVP(&M[0][0], &V[0][0], &P[0][0]);
         glUniformMatrix4fv(prog->getUniform("Manim"), 200, GL_FALSE, &animmat[0][0][0]);
         glDrawArrays(GL_LINES, 4, size_stick-4);
+        
+        //Left Dancer
+        Trans = glm::translate(glm::mat4(1.0f), glm::vec3(-1.5f, -1.3f, -6));
+        M = Trans * S;
+        prog->setMVP(&M[0][0], &V[0][0], &P[0][0]);
+        glDrawArrays(GL_LINES, 4, size_stick-4);
+        
+        //Right Dancer
+        Trans = glm::translate(glm::mat4(1.0f), glm::vec3(0.5f, -1.3f, -6));
+        M = Trans * S;
+        prog->setMVP(&M[0][0], &V[0][0], &P[0][0]);
+        glDrawArrays(GL_LINES, 4, size_stick-4);
+        
         glBindVertexArray(0);
         prog->unbind();
 	}
