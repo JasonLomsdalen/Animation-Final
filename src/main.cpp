@@ -213,9 +213,9 @@ public:
         V = camera->getViewMatrix();
         M = glm::mat4(1);
         
-        glm::mat4 TransZ = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -8));
-        glm::mat4 S = glm::scale(glm::mat4(1.0f), glm::vec3(0.01f, 0.01f, 0.01f));
-        M = TransZ * S;
+        glm::mat4 Trans = glm::translate(glm::mat4(1.0f), glm::vec3(-0.5f, -1.3f, -4));
+        glm::mat4 S = glm::scale(glm::mat4(1.0f), glm::vec3(0.015f, 0.015f, 0.015f));
+        M = Trans * S;
         
         // Send to Shaders and draw
         glBindVertexArray(VertexArrayID);
