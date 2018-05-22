@@ -137,7 +137,7 @@ public:
         readtobone("../../resources/thrustChar00.fbx",&all_animation2,&root2);
         root2->set_animations(&all_animation2,animmat2,animmatsize2);
     
-    
+        //Center Dancer
         glGenVertexArrays(1, &VertexArrayID);
         glBindVertexArray(VertexArrayID);
         
@@ -162,7 +162,7 @@ public:
         glVertexAttribIPointer(1, 1, GL_UNSIGNED_INT, 0, (void*)0);
         
         
-        
+        //Back Up Dancers
         glGenVertexArrays(1, &VertexArrayID2);
         glBindVertexArray(VertexArrayID2);
         
@@ -207,6 +207,7 @@ public:
         prog->setShaderNames(resourceDirectory + "/shader_vertex.glsl", resourceDirectory + "/shader_fragment.glsl");
         prog->init();
         prog->addUniform("Manim");
+        prog->addUniform("Dancer");
 	}
     
     glm::mat4 getPerspectiveMatrix() {
@@ -272,6 +273,7 @@ public:
         prog->bind();
         prog->setMVP(&M[0][0], &V[0][0], &P[0][0]);
         glUniformMatrix4fv(prog->getUniform("Manim"), 200, GL_FALSE, &animmat[0][0][0]);
+        glUniform1i(prog->getUniform("Dancer"), 1);
         glDrawArrays(GL_LINES, 4, size_stick-4);
     
         glBindVertexArray(0);
@@ -285,6 +287,7 @@ public:
         M = Trans * S;
         prog->setMVP(&M[0][0], &V[0][0], &P[0][0]);
         glUniformMatrix4fv(prog->getUniform("Manim"), 200, GL_FALSE, &animmat2[0][0][0]);
+        glUniform1i(prog->getUniform("Dancer"), 2);
         glDrawArrays(GL_LINES, 4, size_stick_2-4);
         
         //Right Dancer
